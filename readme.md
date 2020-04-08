@@ -4,7 +4,7 @@
 
 ## 安装库
 
-- Python=2.7.6
+- Python=3.7.6
 - Django=3.0.3
 - Faker=3.0.0
 

@@ -9,6 +9,7 @@ import faker
 from django.utils import timezone
 
 # 将项目根目录添加到 Python 的模块搜索路径中
+
 back = os.path.dirname
 BASE_DIR = back(back(os.path.abspath(__file__)))
 sys.path.append(BASE_DIR)
@@ -51,7 +52,7 @@ if __name__ == '__main__':
         tags = Tag.objects.order_by('?')
         tag1 = tags.first()
         tag2 = tags.last()
-        time.sleep(3)
+        # time.sleep(3)
         cate = Category.objects.order_by('?').first()
         created_time = fake.date_time_between(start_date='-1y', end_date="now",
                                               tzinfo=timezone.get_current_timezone())
